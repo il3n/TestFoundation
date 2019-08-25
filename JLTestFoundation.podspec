@@ -30,13 +30,23 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'JLTestFoundation/Classes/**/*.{h,m}'
+  s.source_files = 'JLTestFoundation/Classes/*.{h,m}'
+  s.vendored_libraries = 'JLTestFoundation/Classes/**/*.{a}'
+  s.frameworks = 'SystemConfiguration','CoreGraphics','CoreTelephony','Security','CoreLocation','JavaScriptCore'
+  s.libraries  = 'iconv','sqlite3','stdc++','z'
   
   # s.resource_bundles = {
   #   'JLTestFoundation' => ['JLTestFoundation/Assets/*.png']
   # }
 
-  s.public_header_files = 'JLTestFoundation/Classes/**/*.h'
+  s.public_header_files = 'JLTestFoundation/Classes/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking'
+  
+  
+  s.subspec 'JLSub' do |cs|
+      cs.source_files = 'JLTestFoundation/Classes/JLSub/*.{h,m}'
+      cs.public_header_files = 'JLTestFoundation/Classes/JLSub/*.h'
+
+  end
 end

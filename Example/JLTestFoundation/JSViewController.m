@@ -8,7 +8,7 @@
 
 #import "JSViewController.h"
 #import "JLRootObject.h"
-
+#import "WXApi.h"
 @interface JSViewController ()
 
 @end

@@ -1,15 +1,39 @@
 PODS:
-  - JLTestFoundation (0.1.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - JLTestFoundation (0.1.0):
+    - AFNetworking
+    - JLTestFoundation/JLSub (= 0.1.0)
+  - JLTestFoundation/JLSub (0.1.0):
+    - AFNetworking
 
 DEPENDENCIES:
   - JLTestFoundation (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   JLTestFoundation:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JLTestFoundation: 79356c482f814980503e02624b1079b1fcb2807f
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  JLTestFoundation: a1a7565c769e3da84e545d7ecd34d5d6461d36f9
 
 PODFILE CHECKSUM: 5eabb1d0a4767c71ba76c0d68d02b1b51d8ad343
 

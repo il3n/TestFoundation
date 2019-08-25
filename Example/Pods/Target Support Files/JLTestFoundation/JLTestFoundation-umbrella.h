@@ -11,6 +11,11 @@
 #endif
 
 #import "JLRootObject.h"
+#import "JLChild.h"
+#import "WechatAuthSDK.h"
+#import "WXApi.h"
+#import "WXApiObject.h"
+#import "JLChild.h"
 
 FOUNDATION_EXPORT double JLTestFoundationVersionNumber;
 FOUNDATION_EXPORT const unsigned char JLTestFoundationVersionString[];

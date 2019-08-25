@@ -12,12 +12,38 @@
     "kuailelaojia17@126.com": "config.email"
   },
   "source": {
-    "git": "https://github.com/jeelun/TestFoundation.git",
+    "git": "git@github.com:jeelun/TestFoundation.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "JLTestFoundation/Classes/**/*.{h,m}",
-  "public_header_files": "JLTestFoundation/Classes/**/*.h"
+  "source_files": "JLTestFoundation/Classes/*.{h,m}",
+  "vendored_libraries": "JLTestFoundation/Classes/**/*.{a}",
+  "frameworks": [
+    "SystemConfiguration",
+    "CoreGraphics",
+    "CoreTelephony",
+    "Security",
+    "CoreLocation",
+    "JavaScriptCore"
+  ],
+  "libraries": [
+    "iconv",
+    "sqlite3",
+    "stdc++",
+    "z"
+  ],
+  "public_header_files": "JLTestFoundation/Classes/**/*.h",
+  "dependencies": {
+    "AFNetworking": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "JLSub",
+      "source_files": "JLTestFoundation/Classes/JLSub/*.{h,m}"
+    }
+  ]
 }
