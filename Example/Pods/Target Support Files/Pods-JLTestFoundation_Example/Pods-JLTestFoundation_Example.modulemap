@@ -1,0 +1,6 @@
+framework module Pods_JLTestFoundation_Example {
+  umbrella header "Pods-JLTestFoundation_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

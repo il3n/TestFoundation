@@ -1,0 +1,6 @@
+framework module JLTestFoundation {
+  umbrella header "JLTestFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}

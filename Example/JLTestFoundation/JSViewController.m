@@ -7,6 +7,7 @@
 //
 
 #import "JSViewController.h"
+#import "JLRootObject.h"
 
 @interface JSViewController ()
 

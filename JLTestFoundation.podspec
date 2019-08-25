@@ -21,22 +21,22 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/kuailelaojia17@126.com/JLTestFoundation'
+  s.homepage         = 'https://github.com/jeelun/TestFoundation'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'kuailelaojia17@126.com' => 'config.email' }
-  s.source           = { :git => 'https://github.com/kuailelaojia17@126.com/JLTestFoundation.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jeelun/TestFoundation.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'JLTestFoundation/Classes/**/*'
+  s.source_files = 'JLTestFoundation/Classes/**/*.{h,m}'
   
   # s.resource_bundles = {
   #   'JLTestFoundation' => ['JLTestFoundation/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'JLTestFoundation/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
