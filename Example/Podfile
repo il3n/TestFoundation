@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'JLTestFoundation_Example' do
+  pod 'JLTestFoundation', :path => '../'
+
+  target 'JLTestFoundation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
